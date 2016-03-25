@@ -1,0 +1,10 @@
+[
+	{ "keys": ["super+shift+e"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Evernote: "} },
+	{ "keys": ["super+e", "super+s"], "command": "send_to_evernote" },
+	{ "keys": ["super+e", "super+o"], "command": "open_evernote_note" },
+	{ "keys": ["super+e", "super+n"], "command": "new_evernote_note" },
+	{ "keys": ["super+s"], "command": "save_evernote_note", "context": [{"key": "evernote_note"}] },
+	{ "keys": ["super+s"], "command": "send_to_evernote", "context": [{"key": "evernote_note", "operator": "equal", "operand": false}, {"key": "selector", "operator": "equal", "operand": "text.html.markdown.evernote"}] },
+	{ "keys": ["super+ctrl+right"], "command": "next_view_in_stack" },
+	{ "keys": ["super+ctrl+left"], "command": "prev_view_in_stack" },
+]
